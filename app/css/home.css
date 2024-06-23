@@ -1,0 +1,40 @@
+.home-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    height: 100%; /* Ensure all cards have the same height */
+}
+
+.product-image {
+    width: 100%;
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the area while maintaining aspect ratio */
+    border-radius: 10px;
+}
+
+.product-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+    flex-grow: 1; /* Ensure title takes up available space */
+}
+
+.product-price {
+    color: #888;
+    font-size: 1em;
+}
